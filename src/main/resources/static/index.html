@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dean's  CRUD Demo Application With MySQL</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+    <script src="service.js"></script>
+</head>
+
+<body>
+<div class="header">
+    <h1>DEAN'S BIG BOY CRUD APP WITH MYSQL</h1>
+</div>
+<div class="form-container">
+    <form>
+        <input id="person-id" onclick="highlightAll(event)" placeholder="ID" autocomplete="off"><br>
+        <input id="first-name" placeholder="First Name" autocomplete="off"><br>
+        <input id="last-name" placeholder="Last Name" autocomplete="off"><br>
+        <input id="birth-date" placeholder="Birthdate YYYY-MM-DD" autocomplete="off"><br>
+        <button onClick="create(event)">Create</button>
+        <button onClick="readById(event)">Read</button>
+        <button onClick="readAll(event)">Read All</button>
+        <button onClick="update(event)">Update</button>
+        <button onClick="deleteThing(event)">Delete</button>
+    </form>
+
+    <!-- textarea to display json data instead of using popup -->
+    <textarea id="json-display" rows="20" readonly></textarea>
+
+</div>
+</body>
+</html>

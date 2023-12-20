@@ -1,0 +1,64 @@
+/* CSS for encapsulating input fields and buttons in a border */
+.form-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 420px;
+    margin: 0 auto;
+    position:relative;
+}
+
+.form-container textarea{
+    width: 100%;
+    resize:vertical;
+    margin-top: 10px;
+}
+
+/* Style the labels and input fields */
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Style the submit button */
+.form-container button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Remove default outline on focus */
+.form-container input:focus,
+.form-container button:focus {
+    outline: none;
+}
+
+.header{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction:center;
+padding:18px 0;
+background-color: #007BFF;
+}
+.header h1{
+    font-size:18px;
+    margin:0;
+    color:white;
+}
+
+body{
+    background-color:#f0f8ff;
+}
