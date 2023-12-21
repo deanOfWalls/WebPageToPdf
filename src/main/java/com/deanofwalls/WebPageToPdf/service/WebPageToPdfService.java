@@ -1,7 +1,9 @@
 package com.deanofwalls.WebPageToPdf.service;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.io.FileOutputStream;
@@ -22,6 +24,10 @@ public class WebPageToPdfService {
     public Path convertWebPageToPdf(String url, String outputFileName) throws Exception {
         // Setup Firefox WebDriver using WebDriverManager
         WebDriverManager.firefoxdriver().setup();
+        System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
+        System.out.println("URL received for conversion");
+        System.out.println("URL is " + url);
+
 
         // Set the path to the Firefox binary
         FirefoxOptions options = new FirefoxOptions();
