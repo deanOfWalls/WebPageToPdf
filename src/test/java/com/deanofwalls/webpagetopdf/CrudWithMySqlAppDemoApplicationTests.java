@@ -1,4 +1,4 @@
-package com.deanofwalls.WebPageToPdf;
+package com.deanofwalls.webpagetopdf;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
