@@ -1,7 +1,6 @@
-package com.deanofwalls.WebPageToPdf.config;
+package com.deanofwalls.webpagetopdf.crud.config;
 
 import net.sourceforge.htmlunit.corejs.javascript.tools.shell.Environment;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration

@@ -1,4 +1,4 @@
-package com.deanofwalls.WebPageToPdf.model;
+package com.deanofwalls.webpagetopdf.crud.model;
 
 public class WebPageToPdfModel {
     private String url;

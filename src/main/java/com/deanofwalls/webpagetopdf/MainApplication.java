@@ -1,4 +1,4 @@
-package com.deanofwalls.WebPageToPdf;
+package com.deanofwalls.webpagetopdf;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

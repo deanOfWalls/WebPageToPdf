@@ -1,7 +1,7 @@
-package com.deanofwalls.WebPageToPdf.controller;
+package com.deanofwalls.webpagetopdf.crud.controller;
 
-import com.deanofwalls.WebPageToPdf.model.WebPageToPdfModel;
-import com.deanofwalls.WebPageToPdf.service.WebPageToPdfService;
+import com.deanofwalls.webpagetopdf.crud.service.WebPageToPdfService;
+import com.deanofwalls.webpagetopdf.crud.model.WebPageToPdfModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
