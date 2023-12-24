@@ -65,7 +65,7 @@ public final class DesiredCapabilitiesFactory {
     }
 
     public static Capabilities getHeadlessFirefox() {
-        final DesiredCapabilities capabilities = getDefault();
+        final DesiredCapabilities capabilities = getDefault().merge(getFirefox());
         final FirefoxOptions firefoxOptions = new FirefoxOptions();
         firefoxOptions.addPreference("network.automatic-ntlm-auth.trusted-uris", "http://,https://");
         firefoxOptions.addPreference("network.automatic-ntlm-auth.allow-non-fqdn", true);
@@ -88,8 +88,7 @@ public final class DesiredCapabilitiesFactory {
     }
 
     public static Capabilities getHeadlessChrome() {
-        WebDriverManager.chromedriver().setup();
-        final DesiredCapabilities capabilities = getDefault();
+        final DesiredCapabilities capabilities = getDefault().merge(getChrome());
         final ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments(
                 "--headless",
